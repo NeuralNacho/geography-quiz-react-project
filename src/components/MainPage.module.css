@@ -1,0 +1,19 @@
+.MainPage {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.MainContent {
+    flex: 1; /* Allow the main content section to expand and fill available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-image: url('./WorldMap.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px; /* Some extra white space */
+}

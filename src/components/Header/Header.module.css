@@ -1,0 +1,37 @@
+.Banner {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.Title {
+    font-size: 2rem;
+}
+
+.LeftContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.RightContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.HeaderButton {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.2s background-color 0.2s;
+}
+
+.HeaderButton:hover {
+    transform: scale(1.05);
+    background-color: #f4f4f4;
+}

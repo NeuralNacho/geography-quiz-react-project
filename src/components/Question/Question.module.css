@@ -1,0 +1,12 @@
+.QuestionBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: white;
+    width: 500px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,36 @@
+.UserAnswerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: white;
+    width: 500px;
+}
+
+.InputBox {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SubmitButton {
+    background-color: white;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s background-color 0.5s;
+}
+
+.SubmitButton:hover {
+    transform: scale(1.05);
+    background-color: rgb(103, 234, 103);
+}
