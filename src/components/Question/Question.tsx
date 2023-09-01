@@ -3,11 +3,11 @@ import styles from './Question.module.css';
 import { QandAContext } from '../QuestionAndAnswerContext';
 
 const Question: React.FC = () => {
-    const QandAContextValue = useContext(QandAContext);
-    if (!QandAContextValue) { // In the case that Context is undefined (won't happen)
+    const QandAContextValues = useContext(QandAContext);
+    if (!QandAContextValues) { // In the case that Context is undefined (won't happen)
         return null;
     }
-    const { currentQuestionIdentifier } = QandAContextValue;
+    const { currentQuestionIdentifier } = QandAContextValues;
 
     const questions: string[] = ['What is the longest river in South America?', 
             'Which language is this: गिव में सम हिंदी', 

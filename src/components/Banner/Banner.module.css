@@ -3,6 +3,7 @@
     width: 100%;
     background-color: white;
     justify-content: space-around;
+    font-family:'Courier New', Courier, monospace;
     align-items: center;
     border-bottom: 1px solid rgb(179, 179, 179);
 }
@@ -23,15 +24,18 @@
     width: 100%;
 }
 
-.HeaderButton {
+.BannerButton {
     padding: 10px;
     margin-left: 10px;
     cursor: pointer;
     border: 1px solid #ccc;
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
     transition: transform 0.2s background-color 0.2s;
 }
 
-.HeaderButton:hover {
+.BannerButton:hover {
     transform: scale(1.05);
     background-color: #f4f4f4;
 }
