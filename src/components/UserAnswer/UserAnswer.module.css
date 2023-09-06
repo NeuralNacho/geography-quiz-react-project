@@ -34,3 +34,14 @@
     transform: scale(1.05);
     background-color: rgb(103, 234, 103);
 }
+
+.FrozenSubmitButton { 
+    background-color: white;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}

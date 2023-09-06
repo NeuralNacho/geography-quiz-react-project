@@ -7,8 +7,8 @@ interface BannerContextType {
     setStatsDisplayOpen: (isOpen: boolean) => void;
     loginDisplayOpen: boolean;
     setLoginDisplayOpen: (isOpen: boolean) => void;
-    currentUserIdentifier: number;
-    setCurrentUserIdentifier: (newUserIdentifier: number) => void; 
+    usernameToDisplay: string;
+    setUsernameToDisplay: (newUsernameToDisplay: string) => void;
 }
 
 const BannerContext = createContext<BannerContextType | undefined>(undefined);
@@ -21,8 +21,7 @@ const BannerProvider: React.FC<BannerProviderProps> = ({ children }) => {
     const [infoDisplayOpen, setInfoDisplayOpen] = useState<boolean>(false);
     const [statsDisplayOpen, setStatsDisplayOpen] = useState<boolean>(false);
     const [loginDisplayOpen, setLoginDisplayOpen] = useState<boolean>(false);
-    const [currentUserIdentifier, setCurrentUserIdentifier] = useState<number>(-1);
-    // ^ -1 for no anonymous user
+    const [usernameToDisplay, setUsernameToDisplay] = useState<string>('');
 
     const contextValue = {
         infoDisplayOpen,
@@ -31,8 +30,8 @@ const BannerProvider: React.FC<BannerProviderProps> = ({ children }) => {
         setStatsDisplayOpen,
         loginDisplayOpen,
         setLoginDisplayOpen,
-        currentUserIdentifier,
-        setCurrentUserIdentifier
+        usernameToDisplay,
+        setUsernameToDisplay
     };
     
     return (

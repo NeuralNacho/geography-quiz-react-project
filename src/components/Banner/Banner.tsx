@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
     if (!BannerContextValues) {
         return null;
     }
-    const { setInfoDisplayOpen, setStatsDisplayOpen, setLoginDisplayOpen } = BannerContextValues;
+    const { setInfoDisplayOpen, setStatsDisplayOpen, setLoginDisplayOpen, usernameToDisplay } = BannerContextValues;
 
     const openInfo = () => {
         setInfoDisplayOpen(true);
@@ -32,6 +32,10 @@ const Banner: React.FC = () => {
             <div className={styles.RightContainer}>
                 <button className={styles.BannerButton} onClick={openStats}> Stats </button>
                 <button className={styles.BannerButton} onClick={openLogin}> Login </button>
+                {usernameToDisplay !== '' ? <div className={styles.UserStatusContainer}>
+                    <span className={styles.GreenDot}></span>
+                    <span className={styles.Username}> {usernameToDisplay} </span>
+                </div> : null}
             </div>
         </div>
     );

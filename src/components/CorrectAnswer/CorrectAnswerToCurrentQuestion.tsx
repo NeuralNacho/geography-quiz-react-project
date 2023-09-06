@@ -9,11 +9,9 @@ const CorrectAnswerToCurrentQuestion: React.FC = () => {
     if (!QandAContextValue) { // In the case that Context is undefined (won't happen)
         return null;
     }
-    const { currentQuestionIdentifier, userInput } = QandAContextValue;
+    const { currentQuestionAndAnswer, userInput } = QandAContextValue;
 
-    const answers: string[] = ['Parana', 'Hindi', '435']
-
-    const correctAnswerToCurrentQuestion = answers[currentQuestionIdentifier]
+    const correctAnswerToCurrentQuestion = currentQuestionAndAnswer['answer'];
 
     let IsAnswerCorrectText: string = 'Incorrect.';
     if (userInput === correctAnswerToCurrentQuestion) {

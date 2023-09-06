@@ -39,3 +39,23 @@
     transform: scale(1.05);
     background-color: #f4f4f4;
 }
+
+.UserStatusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Username {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.GreenDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 4px;
+}
